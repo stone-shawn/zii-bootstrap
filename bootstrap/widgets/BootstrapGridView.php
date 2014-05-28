@@ -8,8 +8,6 @@
  */
 
 Yii::import('zii.widgets.grid.CGridView');
-// Yii::import('bootstrap.widgets.TbDataColumn');
-
 /**
  * Just Bootstrap grid view extend from Zii grid view.
  */
@@ -27,7 +25,6 @@ class BootstrapGridView extends CGridView
 
   public $pager=array(
     'class'=>'CLinkPager',
-
     'header' => '',
     'firstPageLabel' => '&lt;&lt; First',
     'nextPageLabel' => 'Next &gt;',
@@ -35,7 +32,6 @@ class BootstrapGridView extends CGridView
     'lastPageLabel' => 'Last &gt;&gt;',
     'htmlOptions' => array('class' => 'pagination pagination-xs'),
     'selectedPageCssClass' => 'active'
-
   );
 
   public $cssFile = false;
@@ -48,7 +44,6 @@ class BootstrapGridView extends CGridView
   public function init()
   {
     parent::init();
-
     $classes = array('table');
     $this->itemsCssClass = $this->tableClasses;
   }
@@ -63,7 +58,6 @@ class BootstrapGridView extends CGridView
       if (is_array($column) && !isset($column['class']))
         $this->columns[$i]['class'] = 'bootstrap.widgets.BootstrapDataColumn';
     }
-
     parent::initColumns();
   }
 
@@ -77,7 +71,6 @@ class BootstrapGridView extends CGridView
   {
     if (!preg_match('/^([\w\.]+)(:(\w*))?(:(.*))?$/', $text, $matches))
       throw new CException(Yii::t('zii', 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.'));
-
     $column = new BootstrapDataColumn($this);
     $column->name = $matches[1];
 
