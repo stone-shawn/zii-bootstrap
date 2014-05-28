@@ -1,10 +1,10 @@
 <?php
 /**
- * BootstrapGridView class file.
+ * BootstrapGridView class file modified on Yii-Bootstrap's TDGridView.
  * @author Lei Xiao <ailaohuyou.lei@gmail.com>
- * @copyright Copyright &copy; Lei Xiao 2014 - 
+ * @copyright Copyright &copy; lei's work 2014 - 
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
- * @package admin.widgets
+ * @package bootstrap.widgets
  */
 
 Yii::import('zii.widgets.grid.CGridView');

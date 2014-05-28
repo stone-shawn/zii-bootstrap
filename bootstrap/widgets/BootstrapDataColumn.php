@@ -1,8 +1,8 @@
 <?php
 /**
- * TbDataColumn class file.
- * @author Christoffer Niska <ChristofferNiska@gmail.com>
- * @copyright Copyright &copy; Christoffer Niska 2011-
+ * BootstrapDataColumn class file modified on Yii-Bootstrap's TDDataColumn
+ * @author Lei Xiao <ailaohuyou.lei@gmail.com>
+ * @copyright Copyright &copy; lei's work 2014 - 
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  * @package bootstrap.widgets
  */
